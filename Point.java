@@ -23,4 +23,9 @@ public class Point {
 		Point roundedPoint = new Point(Math.round(x), Math.round(y));
 		return roundedPoint;
 	}
+
+	public Point midPoint(Point a, Point b) {
+		Point mid = new Point(((b.getX() + a.getX()) / 2), ((b.getY() + a.getY()) / 2));
+		return mid;
+	}
 }

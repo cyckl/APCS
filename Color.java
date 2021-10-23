@@ -43,4 +43,8 @@ public class Color {
 		this.green = green;
 		this.blue = blue;
 	}
+
+	public double colorDistance(Color a, Color b) {
+		return Math.sqrt(Math.pow((b.getRed() - a.getRed()), 2) + Math.pow((b.getGreen() - a.getGreen()), 2) + Math.pow((b.getBlue() - a.getBlue()), 2));
+	}
 }

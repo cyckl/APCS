@@ -2,13 +2,12 @@ public class StringFocuser {
 	private String txt;
 	private int index;
 
-	// Construct
 	public StringFocuser(String input, int index) {
 		this.txt = input;
 		this.index = index;
 	}
 
-	// Return data
+	// Accessors
 	public String toString() {
 		return String.format("[%s,%s]", txt, index);
 	}

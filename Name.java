@@ -6,6 +6,7 @@ public class Name {
 		this.last = last;
 	}
 
+	// Accessors
 	public String getFirst() {
 		return first;
 	}
@@ -24,6 +25,12 @@ public class Name {
 		return first + " " + last;
 	}
 
+	public static Name simplifyName(Name n) {
+		Name simplified = new Name(n.getFirst(), n.getLast().substring(0,1));
+		return simplified;
+	}
+
+	// Modifiers
 	public void setFirst(String first) {
 		this.first = first;
 	}
